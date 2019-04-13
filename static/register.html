@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/init.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/register.css">
+  <script src="js/ajax.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/register.js"></script>
+</head>
+<body>
+  <div id="header"></div>
+  <div id="content">
+    <div class="register">
+      <div class="area clear pr">
+        <div class="register_title pr">
+            <h2 class="pa">手机注册</h2>
+            <a href="#" class="icon_btn"></a>
+        </div>
+        <div class="phone_err" id="phone_err">手机号格式错误</div>
+        <input type="text" placeholder="手机号" id="phone" class="input_form" onblur="func_phone_blur()">
+        <div class="upwd_err" id="upwd_err">包含数字、字母、下划线的6-18位</div>
+        <input type="password" placeholder="密码" id="upwd" class="input_form" onblur="func_upwd_blur()">
+        <div class="cpwd_err" id="cpwd_err">两次密码输入不一致</div>
+        <input type="password" placeholder="确认密码" id="cpwd" class="input_form" onblur="func_cpwd_blur()">
+        <div class="iden_err" id="iden_err">验证码错误</div>
+        <div class="iden_area pr">
+          <input type="text" placeholder="验证码" id="iden" class="input_form iden_form" onblur="func_iden_blur()">
+          <img src="asets/picture/yzm.png" class="pa">
+        </div>
+        <button class="btn" onclick="register()">注册</button>
+        <div class="agree pr">
+          <input type="checkbox"  id="agree" class="pa" name="agree">
+          <laber for="agree" class="agree_label">我已阅读并同意<a href="#">《用户注册协议》</a></laber>
+        </div>
+        <div class="have">
+          已有账号？
+          <a href="http://127.0.0.1:5555/login.html">立即登录</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer"></div>
+</body>
+</html>

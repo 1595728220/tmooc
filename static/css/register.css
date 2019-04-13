@@ -1,0 +1,92 @@
+.register{
+  width:400px;
+  padding:15px 30px 30px;
+  background:#fff;
+  border-radius:7px;
+  padding:15px 30px 30px;
+  margin:70px auto 80px;
+  color:#999;
+  font-size:12px;
+}
+.register>.area{
+  width:340px;
+  margin:0 auto;
+}
+.register>.area>.register_title{
+  width:340px;
+  height:40px;
+  margin:0 auto 36px;
+  border-bottom:1px solid #ddd;
+
+}
+.register>.area>.register_title>.icon_btn{
+  float:right;
+  width:50px;
+  height:50px;
+  background:url("../asets/images/img2018040401_ll.png");
+}
+.register>.area>.register_title>h2{
+  border-bottom:2px solid #000;
+  left:0px;
+  font-size:14px;
+  color:#282828;
+  line-height:40px;
+}
+.register>.area>.phone_err,
+.register>.area>.upwd_err,
+.register>.area>.cpwd_err,
+.register>.area>.iden_err{
+  width:340px;
+  margin:0 auto;
+  color:#F44336;
+  top:75px;
+  right:62px;
+  font-size:12px;
+  text-align:right;
+  position:absolute;
+  right:0;
+  display: none;
+}
+.register>.area>.phone_err{
+  top:62px;
+}
+.register>.area>.upwd_err{
+  top:120px;
+}
+.register>.area>.cpwd_err{
+  top:178px;
+}
+.register>.area>.iden_err{
+  top:238px;
+}
+.register>.area>.iden_area{
+  width:340px;
+  margin:0 auto 15px;
+}
+.register>.area>.iden_area>.iden_form{
+  width:80px;
+  margin-right:15px;
+  display:inline-block;
+}
+.register>.area>.iden_area>img{
+  top:0px;
+}
+.register>.area>.agree{
+  float: left;
+}
+.register>.area>.agree>#agree{
+  top:3px;
+}
+.register>.area>.agree>.agree_label{
+  margin-left:17px;
+}
+.register>.area>.agree>.agree_label>a{
+  color:#F44336;
+}
+.register>.area>.have{
+  float:right;
+}
+.register>.area>.have>a{
+  color:#4B95FF;
+  font-style:italic;
+}

@@ -1,0 +1,58 @@
+#header{
+  width:100%;
+  background:#fff;
+  box-shadow:0 0 20px 10px rgba(221, 221, 221, .5);
+}
+.header_content {
+  width:1200px;
+  height:70px;
+  margin:0 auto;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_content img{
+  margin-top:11px;
+}
+.header_content>.nav>li{
+  float:left;
+  padding:0 20px;
+}
+.header_content>.nav>li:first-child{
+  margin-left:-64px;
+}
+.header_content>.nav>li>a{
+  float:left;
+  font-size:16px;
+  color:#161616;
+  /* padding:0 20px; */
+}
+.header_content>.nav>li>a:hover{
+  color:#0aa1ed;
+}
+.header_content>.login_area>li{
+  height:35px;
+  line-height:35px;
+
+  float:right;
+}
+
+.header_content>.login_area>li:nth-child(2){
+  margin:0 12px;
+  font-size:14px;
+}
+.header_content>.login_area>li>a{
+  font-size:14px;
+  color:#000;
+}
+.header_content>.login_area>li>.showhide_search{
+  width:35px;
+  height:35px;
+  border-radius:50%;
+  background:#4f8dfe url(../asets/picture/search.png) no-repeat center center;
+  background-size:20px;
+  float:right;
+  cursor: pointer;
+  margin-right:21px;
+}
+
