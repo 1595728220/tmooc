@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,15 +14,17 @@
   <script src="js/header.js"></script>
   <script src="js/footer.js"></script>
   <script src="js/register.js"></script>
+  <script src="js/alert.js"></script>
 </head>
+
 <body>
   <div id="header"></div>
   <div id="content">
-    <div class="register">
+    <div class="register pr">
       <div class="area clear pr">
         <div class="register_title pr">
-            <h2 class="pa">手机注册</h2>
-            <a href="#" class="icon_btn"></a>
+          <h2 class="pa">手机注册</h2>
+          <a href="#" class="icon_btn"></a>
         </div>
         <div class="phone_err" id="phone_err">手机号格式错误</div>
         <input type="text" placeholder="手机号" id="phone" class="input_form" onblur="func_phone_blur()">
@@ -36,7 +39,7 @@
         </div>
         <button class="btn" onclick="register()">注册</button>
         <div class="agree pr">
-          <input type="checkbox"  id="agree" class="pa" name="agree">
+          <input type="checkbox" id="agree" class="pa" name="agree">
           <laber for="agree" class="agree_label">我已阅读并同意<a href="#">《用户注册协议》</a></laber>
         </div>
         <div class="have">
@@ -44,8 +47,11 @@
           <a href="http://127.0.0.1:5555/login.html">立即登录</a>
         </div>
       </div>
+  <div id="alert_area"></div>
+
     </div>
   </div>
   <div id="footer"></div>
 </body>
+
 </html>

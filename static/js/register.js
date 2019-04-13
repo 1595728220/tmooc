@@ -34,15 +34,17 @@
   }
 
   function callback(res) {
-    alert(res.msg)
+    my_alert(res.msg)
   }
 
   function func_phone_blur() {
-    console.log("失去焦点")
+    // console.log("失去焦点")
     if (!phoneRegex.test(phone.value)) {
       phone_err.style.display = "block"
+      phone_err.style.color = ""
       phone.className = "input_form input_form_error"
       state_phone = 0
+      phone_err.innerHTML = "手机号格式错误"
     } else {
       let url = "http://127.0.0.1:5555/user/phone",
         data = {
@@ -54,14 +56,16 @@
   }
 
   function func_phone_blur_yanzheng(res) {
-    console.log(agree.value)
+    // console.log(agree.value)
 
-    console.log("手机号非空，验证是否被注册")
-    console.log(res)
+    // console.log("手机号非空，验证是否被注册")
+    // console.log(res)
     if (res.code === 200) {
-      phone_err.style.display = "none"
+      phone_err.style.display = "block"
+      phone_err.style.color = "#4ab71a"
       phone.className = "input_form"
       state_phone = 1
+      phone_err.innerHTML = res.msg
     } else {
       phone_err.style.display = "block"
       phone.className = "input_form input_form_error"
@@ -84,11 +88,16 @@
 
   function func_cpwd_blur() {
     if (cpwd.value !== upwd.value) {
+      cpwd_err.style.color = ""
+      cpwd_err.innerHTML = "两次输入密码不一致"
       cpwd_err.style.display = 'block'
       cpwd.className = "input_form input_form_error"
       state_cpwd = 0
     } else {
-      cpwd_err.style.display = "none"
+      // cpwd_err.style.display = "none"
+      cpwd_err.style.display = 'block'
+      cpwd_err.style.color = "#4ab71a"
+      cpwd_err.innerHTML = "两次密码输入一致"
       cpwd.className = "input_form"
       state_cpwd = 1
     }

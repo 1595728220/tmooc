@@ -22,10 +22,10 @@ let phoneRegex = /^1[34578]\d{9}$/,
     }
   }
   function callback(res){
-    alert(res.msg)
+    my_alert(res.msg)
   }
   function func_blur(){
-    console.log("失去焦点")
+    // console.log("失去焦点")
     if(!phoneRegex.test(phone.value)){
       phone_err.style.display="block"
       phone.className = "input_form input_form_error"
