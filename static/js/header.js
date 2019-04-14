@@ -6,6 +6,7 @@
     //调用ajax使用get方法向http://127.0.0.1:5555/header.html请求静态文件
     ajax("http://127.0.0.1:5555/header.html","get",{},"text").then(res=>{
       header.innerHTML = res 
+      //为搜索按钮绑定鼠标移入移出事件
       showhide()
     })
   }
