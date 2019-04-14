@@ -6,6 +6,18 @@
     //调用ajax使用get方法向http://127.0.0.1:5555/header.html请求静态文件
     ajax("http://127.0.0.1:5555/header.html","get",{},"text").then(res=>{
       header.innerHTML = res 
+      showhide()
     })
   }
+  let showhide = function (){
+    showhide_search.onmouseover = e=>{
+      e.preventDefault()
+      search_input.style.width = "135px"
+    }
+    showhide_search.onmouseout = e=>{
+      e.preventDefault()
+      search_input.style.width = ""
+    }
+  }
+
 }

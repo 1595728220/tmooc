@@ -20,7 +20,7 @@
   padding:0 20px;
 }
 .header_content>.nav>li:first-child{
-  margin-left:-64px;
+  margin-left:-15px;
 }
 .header_content>.nav>li>a{
   float:left;
@@ -47,13 +47,39 @@
   color:#000;
 }
 .header_content>.login_area>li>.showhide_search{
-  width:35px;
+  width:135px;
   height:35px;
-  border-radius:50%;
-  background:#4f8dfe url(../asets/picture/search.png) no-repeat center center;
-  background-size:20px;
+  border-radius:17.5px;
+  /* background:#4f8dfe; */
+  /* background:#4f8dfe url(../asets/picture/search.png) no-repeat 8px 8px; */
   float:right;
   cursor: pointer;
   margin-right:21px;
+}
+.header_content>.login_area>li>.showhide_search>.search_icon{
+  width:35px;
+  height:35px;
+  left:100px;
+  background:#4f8dfe url(../asets/picture/search.png) no-repeat center;
+  border-radius:50%;
+  background-size:20px;
+  /* float:right; */
+}
+.header_content>.login_area>li>.showhide_search>.search_input{
+  box-sizing: border-box;
+  width:35px;
+  height:35px;
+  background: #4f8dfe;
+  border:0;
+  color:#fff;
+  font-size:15px;
+  float:right;
+  border-radius:17.5px;
+  padding:0 10px;
+  outline:none;
+  transition:width .5s linear;
+}
+.header_content>.login_area>li>.showhide_search>.search_input::-webkit-input-placeholder{
+  color:#fff;
 }
 
