@@ -1,21 +1,27 @@
 {
-    // console.log(1)
-    function my_alert(msg){
+    /**
+     * 
+     * @param {string} msg 要显示到提示框的消息
+     */
+    function my_alert(msg) {
+        //将消息添加到提示框
         alert_area.innerHTML = msg
-        let high = content.children[0].clientHeight,
-        wid = content.children[0].clientWidth,
-        eWid = alert_area.clientWidth
-        console.log(high,wid)
-        alert_area.style.left= (wid-eWid)/2+"px"
-        
-        alert_area.style.top = high/2-30+"px"
-        // alert_area.style.display = "block"
+        let high = content.children[0].clientHeight, //获取父元素高度
+            wid = content.children[0].clientWidth, //获取父元素宽度
+            eWid = alert_area.clientWidth //获取元素宽度
+        // console.log(high, wid)
+        //相对于父元素宽度居中
+        alert_area.style.left = (wid - eWid) / 2 + "px"
+        // 相对于父元素高度居中
+        alert_area.style.top = high / 2 - 30 + "px"
+        //不透明
         alert_area.style.opacity = 1
+        //恢复高度
         alert_area.style.height = "60px"
-        setTimeout(()=>{
-            // alert_area.style.display = "none"
+        //2s后提示框隐藏
+        setTimeout(() => {
             alert_area.style.opacity = 0
             alert_area.style.height = "0"
-        },3000)
+        }, 2000)
     }
 }

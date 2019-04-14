@@ -19,28 +19,53 @@
 </head>
 
 <body>
-  <div id="header">
 
-  </div>
+  <!-- header start -->
+  <div id="header"></div>
+  <!-- header end -->
+
+  <!-- content start -->
   <div id="content">
+
+    <!-- loginForm start-->
     <div class="login pr">
-        <div id="alert_area">1</div>
+
+      <!-- 消息提示框开始 -->
+      <div id="alert_area">1</div>
+      <!-- 消息提示框结束 -->
+
       <h2>登录</h2>
+
+      <!-- 手机表单开始 -->
       <div class="phone_err pa" id="phone_err">手机号格式错误</div>
-      <input type="text" class="input_form " placeholder="手机号" id="phone" onblur="func_blur()">
-      <input type="password" class="input_form" placeholder="密码" id="upwd">
+      <input type="text" class="input_form " placeholder="手机号" id="phone" onblur="func_phone_blur()">
+      <!-- 手机表单结束 -->
+
+      <!-- 密码表单开始 -->
+      <div class="upwd_err pa" id="upwd_err">包含数字、字母、下划线的6-18位</div>
+      <input type="password" class="input_form" placeholder="密码" id="upwd" onblur="func_upwd_blur()">
+      <!-- 密码表单结束 -->
+
+      <!-- 登录按钮 -->
       <button class="btn" onclick="login()" id="btn_login">登录</button>
+
+      <!-- 注册忘记密码跳转链接开始 -->
       <ul class="clear">
         <li><a href="http://127.0.0.1:5555/register.html">注册</a></li>
         <li><a> | </a></li>
         <li><a href="#">忘记密码</a></li>
       </ul>
- 
+      <!-- 注册忘记密码跳转链接结束 -->
 
     </div>
+    <!-- loginForm end -->
+
   </div>
-  <div id="footer">
-  </div>
+  <!-- content end -->
+
+  <!-- footer start -->
+  <div id="footer"></div>
+  <!-- footer end -->
 
 </body>
 
