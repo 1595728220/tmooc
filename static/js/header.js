@@ -10,6 +10,9 @@
       showhide()
     })
   }
+  /**
+   * 鼠标进入/离开，显示/隐藏搜索输入框
+   */
   let showhide = function (){
     showhide_search.onmouseover = e=>{
       e.preventDefault()
